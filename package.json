@@ -1,0 +1,25 @@
+{
+  "name": "Weatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.j",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/cli-init": "^3.10.0",
+    "axios": "^0.19.0",
+    "concurrently": "^4.1.2",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "1.19.1"
+  }
+}
